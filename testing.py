@@ -6,7 +6,7 @@ def binary_search(arr, target, high, low):
         return True
     elif arr[mid] > target:
         return binary_search(arr, target, mid - 1, low)
-    else:
+    elif arr[mid] < target:
         return binary_search(arr, target, high, mid + 1)
 
 arr = [1,2,3,4,5,6,7,8]
